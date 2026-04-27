@@ -45,7 +45,11 @@ public class Utilities {
 	// Returns n to the power of e
 	// E.g. power(2, 3) should return 8
 	public static int power(int n, int e) {
-		return 0; // TODO: implement
+		return (int) Math.pow(n, e);
+	}
+	// Returns n to the power of e for doubles
+	public static double power(double n, double e) {
+		return Math.pow(n, e);
 	}
 	
 	// Returns true if values a b c d are in ascending order
