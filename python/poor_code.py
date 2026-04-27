@@ -19,21 +19,19 @@ def locateTopEven(arr):
             indexOfTopEven = i
     return indexOfTopEven
 
-def   evaluate_conditions(a: bool, b: bool, c: int) :
-    if c > 0:
-        if a==False:
-            if b ==  True:
-                return True
-            else: return  False
-        else:
-            if b == False: return True
-            else:
-                return False
-    else:
-        if c< 0:
-            if  b == True and a == True : return False
-            if a == False and b == False : return False
-            return  True
+# Function evaluate_conditions
+#
+# Takes an integer and two boolean parameters.
+#
+# It checks if integer parameter is different from 0 and returns the XOR of the booleans
+#
+# Otherwise, returns false.
+# 
+# XOR table: https://en.wikipedia.org/wiki/Exclusive_or
+def evaluate_conditions(a: bool, b: bool, c: int):
+    if c != 0:
+        return (a ^ b)
+    
     return False
 
 def print_stats(arr):
