@@ -6,7 +6,7 @@ import math
 #
 # First parameter serves as the title, second as the first name and second is the surname
 #
-def x(title, first_name, last_name):
+def greet_user(title, first_name, last_name):
     print("Hello, " + title + " " + first_name + " " + last_name)
 
 def locateTopEven(arr):
