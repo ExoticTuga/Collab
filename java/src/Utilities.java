@@ -39,7 +39,15 @@ public class Utilities {
 	// Prints the number n to console n times
 	// E.g. for n = 3, it should print "3 3 3"
 	public static void printNNtimes(int n) {
-		return; // TODO: implement
+		if (n < 0){
+			System.out.println("n must be a positive number...");
+			return;
+		}
+		else {
+			for(int i = 0; i < n; i++) {
+				System.out.print(n + " ");
+			}
+		}
 	}
 	
 	// Returns n to the power of e
