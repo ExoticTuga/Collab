@@ -58,12 +58,19 @@ public class PoorCode {
 		int topEven = Integer.MIN_VALUE, indexOfTopEven= 0;
 		for(int i = 0; (i < arr.length); i++){
 			if (arr[i] % 2 == 0) && (arr[i] > topEven) {
+	// Returns an index of the highest even number in an array
+	public static int locateTopEven(int[] arr) {
+		int topEven = Integer.MIN_VALUE, indexOfTopEven = 0;
+		for(int i = 0; i < arr.length; i++) {
+			if(arr[i] % 2 == 0 && arr[i] > topEven) { // if arr[i] is even and larger
 				topEven = arr[i];
 				indexOfTopEven = i;
 			}
 		}
 	return indexOfTopEven;
 	}	
+		return indexOfTopEven;
+	}
 	
 	public static boolean evaluateConditions(boolean a,boolean b, int c) {
 		if(c >0) {
